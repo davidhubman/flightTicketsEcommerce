@@ -1,0 +1,132 @@
+.extraBoxx {
+  margin: 2rem 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+}
+.extraBoxx .box {
+  height: 15 vh;
+  border-radius: 5px;
+  margin: 1rem 0;
+  width: 80%;
+}
+.extraBoxx .box label {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+.extraBoxx .box .inputBox {
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: 0.3s;
+}
+.extraBoxx .box .inputBox .icon {
+  height: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.extraBoxx .box .inputBox select {
+  color: lightgray;
+  background-color: transparent;
+  font-size: 1rem;
+}
+.extraBoxx .box .inputBox select option {
+  color: #828282;
+}
+.extraBoxx .box .inputBox:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.extraBoxx .box .inputBox:hover .icon {
+  color: #3884FE;
+  filter: drop-shadow(0px 0px 4px white);
+}
+.extraBoxx .counterBox {
+  padding: 5px;
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  color: white;
+  transition: 0.3s;
+}
+.extraBoxx .counterBox .counterBoxx {
+  height: 8vh;
+  justify-content: space-between;
+  width: 100%;
+}
+.extraBoxx .counterBox .counterBoxx label {
+  text-shadow: 1px 1px 1px black;
+  color: #ffffff;
+  height: 30%;
+  align-items: center;
+  font-size: 1rem;
+}
+.extraBoxx .counterBox .counterBoxx .counter {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  height: 60%;
+  border-radius: 5px;
+  color: white;
+}
+.extraBoxx .counterBox .counterBoxx .counter h2 {
+  font-size: 1.4rem;
+  text-shadow: 0px 0px 10px white, 0px 0px 5px white, 0px 0px 5px white, 0px 0px 10px white;
+  color: #3884FE;
+}
+.extraBoxx .counterBox .counterBoxx .counter button {
+  color: #ffffff;
+  height: 100%;
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  background: none;
+}
+.extraBoxx .counterBox .counterBoxx .counter button:hover {
+  background-color: #ffffff;
+  color: #3884FE;
+}
+
+@media screen and (min-width: 1024px) {
+  .extraBoxx {
+    height: 60%;
+    width: 25%;
+    margin: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .extraBoxx .box {
+    border: none;
+    width: 80%;
+    justify-content: center;
+  }
+  .extraBoxx .box .inputBox {
+    display: flex;
+  }
+  .extraBoxx .counterBox {
+    width: 100%;
+    align-items: center;
+  }
+  .extraBoxx .counterBox .counterBoxx {
+    margin: 1px 0;
+  }
+  .extraBoxx .counterBox .counterBoxx label {
+    height: auto;
+  }
+  .counter {
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=ExtraBox.module.css.map */

@@ -1,0 +1,96 @@
+@import "../../scss/variables";
+
+
+.form {
+    border: 1px solid #eee;
+    box-shadow: 1px 2px 4px #ccc;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+    text-align: left;
+    transition: all .5s;
+    width: 100%;
+    max-width: 19rem;
+
+    &Title {
+        font-size: 1.2rem;
+    }
+
+    &Input {
+        position: relative;
+        width: 100%;
+
+        input {
+            border: none;
+            border-bottom: 1px solid $gray;
+            outline: none;
+            padding: .8rem .3rem .8rem 0;
+            padding-left: 3rem;
+            width: 100%;
+
+            &::placeholder {
+                color: $lightgray;
+            }
+
+            &:focus {
+                border-bottom-color: $main-color;
+            }
+        }
+
+        label {
+            position: absolute;
+            top: -100000rem;
+            left: -100000rem;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+        }
+
+        &Icon {
+            color: $lightgray;
+            font-size: 25px;
+            position: absolute;
+            top: 20%;
+            left: .5rem;
+            transition: all .5s;
+
+            &Error {
+                top: 10%;
+                color: #ff0000
+            }
+        }
+
+        &Error {
+            color: #ff0000;
+
+            &:focus {
+                border-bottom-color: #ff0000 !important;
+
+            }
+        }
+
+        &ErrorMessage {
+            display: inline-block;
+            color: #ff0000;
+            padding-top: 5px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    button {
+        background-color: $main-color;
+        color: $white;
+
+        &:hover {
+            background-color: lighten($main-color, 5%);
+        }
+
+        &:active {
+            background-color: darken($main-color, 5%);
+        }
+    }
+}

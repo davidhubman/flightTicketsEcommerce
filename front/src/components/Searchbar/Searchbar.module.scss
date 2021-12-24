@@ -1,0 +1,630 @@
+@import "../../scss/variables";
+
+.searchBarContainer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /*  background: rgb(128, 177, 255);
+  background: linear-gradient(
+    197deg,
+    rgba(128, 177, 255, 1) 0%,
+    rgba(56, 132, 254, 1) 30%,
+    rgba(75, 144, 254, 1) 81%,
+    rgba(136, 182, 255, 1) 100%
+  ); */
+  background-color: $white;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  .titleBox {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    text-align: center;
+
+    // background-color: red;
+    h3 {
+      // padding-top        : 1rem;
+      font-size: 1.5rem;
+      font-weight: $regular-font;
+      // font-family     : $titles-font;
+      color: black;
+      border-bottom: solid 2px $secundary-color;
+      // text-shadow: 0px 0px 2px black;
+    }
+  }
+
+  form {
+    // background-color: brown;
+    // height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .allInputsBox {
+      align-items: center;
+      width: 100%;
+
+      .originDestiny {
+        width: 100%;
+        align-items: center;
+
+        // height: 30vh;
+        .selects {
+          width: 80%;
+          // height: 50%;
+          display: flex;
+          justify-content: center;
+          // margin: 0.5rem 0;
+          // background-color: blue;
+
+          .inputBox {
+            height: 8vh;
+            // background-color: red;
+            margin-bottom: 1rem;
+            border-bottom: solid 1px $main-color;
+            transition: 0.3s;
+
+            .icon {
+              color: $main-color;
+              text-shadow: 0px 0px 2px black;
+              height: 50%;
+            }
+
+            input {
+              padding-left: 0.4rem;
+              height: 100%;
+              color: black;
+            }
+          }
+
+          .inputBox:hover {
+            // background-color: rgba(255, 255, 255, 0.4);
+
+            outline: 1px solid $main-color;
+
+            input::placeholder {
+              color: rgba(0, 0, 0, 0.5);
+            }
+          }
+
+          .ulBox {
+            // width    : 100%;
+            // height: 10vh;
+            height: auto;
+            // background-color: blue;
+            z-index: 5000;
+
+            ul {
+              outline: solid 1px $main-color;
+              background-color: white;
+              list-style: none;
+              position: absolute;
+              // background-color   : red;
+              // width                 : 72%;
+              // border: solid 1px $main-color;
+
+              li {
+                display: flex;
+                border-radius: 2px;
+                // border: solid 1px $lightgray;
+                flex-direction: column;
+                justify-content: center;
+                // height          : 20%;
+              }
+
+              button {
+                transition: 0.1s;
+                width: 100%;
+                padding: 0.5rem 0.2rem;
+                text-align: left;
+
+                background-color: white;
+                border: none;
+              }
+
+              button:hover {
+                color: white;
+                background-color: $main-color
+              }
+            }
+          }
+        }
+      }
+
+      .journeyBoxWithDate {
+        align-items: center;
+        width: 100%;
+        // background-color: blue;
+
+        .selects {
+          margin: 1rem 0 0 0;
+          width: 80%;
+          border-radius: 3px;
+          border-bottom: solid 1px $main-color;
+
+          .inputBox {
+            height: 8vh;
+            transition: 0.3s;
+
+            .icon {
+              color: $main-color;
+              height: 50%;
+            }
+
+            select {
+              background-color: transparent;
+              color: $black;
+              height: 100%;
+              font-size: 1.3rem;
+
+              option {
+                background-color: white;
+                color: $gray;
+              }
+
+              option:hover {
+                background-color: $main-color;
+              }
+            }
+          }
+
+          .inputBox:hover {
+            outline: 1px solid $main-color;
+          }
+        }
+
+        .dataBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          // background-color: mediumslateblue;
+          width: 100%;
+          // height                   : 30vh;
+          // border             : 1px solid #505050;
+
+          .selectsData {
+            width: 80%;
+            // padding: 0 0.2rem;
+            margin: 1rem 0;
+            border-bottom: solid 1px $main-color;
+            // text-shadow: 0px 0px 2px black;
+
+            input {
+              // background-color: mediumspringgreen;
+              height: 6vh;
+              font-size: 1.2rem;
+              color: darkgray;
+            }
+
+            input::-webkit-calendar-picker-indicator {
+              cursor: pointer;
+              border-radius: 4px;
+              margin-right: 2px;
+              opacity: 0.6;
+              filter: invert(0.2);
+              -ms-filter: invert(0.2);
+              -webkit-filter: invert(0.2);
+              -o-filter: invert(0.2);
+            }
+
+            input::-webkit-calendar-picker-indicator:hover {
+              opacity: 1;
+            }
+
+            .labelDisableD {
+              opacity: 0.4;
+            }
+
+            .inputBoxDisabled {
+              // height        : 7vh;
+              border-radius: 5px;
+              // width: 100%;
+              // border: 1px solid #505050;
+              display: flex;
+              align-items: center;
+              flex-direction: row;
+              color: $lightgray;
+              // background: $white;
+              // padding-left: 0.3rem;
+              opacity: 0.4;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .botonBox {
+    width: 100%;
+    height: 6vh;
+    margin-bottom: 1rem;
+    // background-color: khaki;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      color: $white;
+      background-color: $main-color;
+      height: 100%;
+      width: 40%;
+      border: none;
+      // border: 1px solid white;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      box-shadow: 1px 1px 3px white inset;
+
+      .iconSearch {
+        margin: 0 0.5rem;
+      }
+    }
+
+    button:hover {
+      box-shadow: -2px -2px 3px black inset;
+    }
+
+    button:active {
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5) inset;
+    }
+  }
+
+  label {
+    // text-shadow: 0px 0px 2px black;
+
+    color: $black;
+    // font-weight: $bold-font;
+    font-size: 1.2rem;
+    font-family: $content-font;
+  }
+
+  input {
+    // font-weight: $medium-font;
+
+    color: $darkgray;
+    border: none;
+    background: transparent;
+    width: 85%;
+    // height    : 100%;
+    font-size: 1.3rem;
+  }
+
+  select {
+    color: $gray;
+    padding: 3px;
+    transition: 0.2s;
+    border: none;
+    width: inherit;
+    // height    : 100%;
+    font-size: 1.2rem;
+
+    :hover {
+      color: $black;
+    }
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  .inputBox {
+    // height        : 7vh;
+    border-radius: 5px;
+    width: 100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    background: transaprent;
+    padding-left: 0.3rem;
+
+    input {
+      color: white;
+    }
+
+    input::placeholder {
+      // color: rgba(211, 211, 211, 0.6);
+    }
+  }
+
+  .icon {
+    color: $lightgray;
+    // height    : 70%;
+    width: 15%;
+    font-size: 1.2rem;
+    // padding  : 0 5px;
+    transition: 0.2s;
+
+    :hover {
+      color: $main-color;
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  //768px
+
+  .searchBarContainer {
+    input {
+      font-size: 1.5rem;
+    }
+
+    .dataBox {
+      width: 80%;
+
+      .selectsData {
+        margin-right: 1rem;
+
+        input {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .selects {
+      .ulBox {
+        // width: 40%;
+
+        ul {
+          // width: 65%;
+        }
+      }
+
+      .inputBox {
+        select {
+          font-size: 1.3rem;
+        }
+
+        .icon {
+          width: 10%;
+        }
+      }
+    }
+
+    .botonBox {
+      .boton {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $notebook-width) {
+  //1024
+
+  .searchBarContainer {
+    box-shadow: 1px 1px 5px black;
+    width: 70%;
+
+    .titleBox {
+
+      // background-color: red;
+      h3 {
+        font-size: 2rem;
+      }
+    }
+
+    form {
+      height: 30vh;
+      width: 100%;
+      flex-direction: row;
+
+      .allInputsBox {
+        // background-color: red;
+        // background-color: rgba(0, 128, 0, 0.4);
+        width: 70%;
+        flex-direction: column;
+
+        .originDestiny {
+          // background-color: violet;
+          width: 100%;
+          // height: 80%;
+          justify-content: center;
+          flex-direction: row;
+
+          .selects {
+            // background-color: red;
+            // width: 90%;
+            // height: 5em;
+            margin: 0 0.5rem;
+
+            label {
+              // font-size: 1rem;
+            }
+
+            input {
+              height: 100%;
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .journeyBoxWithDate {
+          // background-color: yellowgreen;
+          width: 100%;
+          // margin: none;
+          flex-direction: row;
+
+          align-items: end;
+
+          label {
+            // font-size: 1rem;
+          }
+
+          .selects {
+            width: 60%;
+            margin: 0 0.5rem;
+
+            .inputBox {
+              select {
+                height: 100%;
+                font-size: 1rem;
+              }
+            }
+          }
+
+          .dataBox {
+            width: 95%;
+            flex-direction: row;
+
+            .selectsData {
+              width: 100%;
+              margin: 0 0.5rem;
+
+              input {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .botonBox {
+      margin-top: 1.5rem;
+    }
+
+    .dataBox {
+      width: 80%;
+      height: 100%;
+
+      justify-content: space-between;
+
+      .selectsData {
+        // margin-right: 1rem;
+        height: 100%;
+
+        input {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .selects {
+      .ulBox {
+        // width: 40%;
+
+        ul {
+          // width: 65%;
+        }
+      }
+
+      .inputBox {
+        select {
+          font-size: 1.3rem;
+        }
+
+        .icon {
+          width: 10%;
+        }
+      }
+    }
+
+    .botonBox {
+      width: 50%;
+
+      // background: red;
+      .boton {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  //1440
+}
+
+.ErrorBox {
+  transition: 0.2s;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+
+  // background-color: rgba(43, 117, 43, 0.432);
+  .errorr {
+    transition: 0.4s;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    // padding: 2rem 0;
+    background-color: transparent;
+    height: 60%;
+    width: 100%;
+    // border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .textBox {
+      text-align: center;
+
+      h2,
+      p {
+        font-size: 1.2rem;
+        color: white;
+        // text-shadow: 0px 0px 10px black;
+        text-shadow: 0px 0px 50px $main-color;
+      }
+    }
+
+    .exclamation {
+      color: yellow;
+      filter: drop-shadow(0px 0px 2px black);
+      font-size: 4em;
+    }
+
+    button {
+      color: $white;
+      background-color: $secundary-color;
+      height: 2em;
+      width: 6em;
+      border: none;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+      box-shadow: -1px -1px 3px black inset;
+    }
+
+    button:hover {
+      box-shadow: -2px -2px 3px black inset;
+    }
+
+    button:active {
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5) inset;
+    }
+  }
+}
+
+.disabled {
+  * {
+    display: none;
+  }
+
+  // position: absolute;
+  // top     : 150vh
+}

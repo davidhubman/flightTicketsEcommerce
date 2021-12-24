@@ -1,0 +1,394 @@
+.searchBarContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #80b1ff;
+  background: linear-gradient(197deg, #80b1ff 0%, #3884fe 30%, #4b90fe 81%, #88b6ff 100%);
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.searchBarContainer .titleBox {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.searchBarContainer .titleBox h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ffffff;
+  border-bottom: solid 2px #146eff;
+  text-shadow: 0px 0px 2px black;
+}
+.searchBarContainer form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.searchBarContainer form .allInputsBox {
+  align-items: center;
+  width: 100%;
+}
+.searchBarContainer form .allInputsBox .originDestiny {
+  width: 100%;
+  align-items: center;
+  height: 20vh;
+}
+.searchBarContainer form .allInputsBox .originDestiny .selects {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+.searchBarContainer form .allInputsBox .originDestiny .selects .inputBox {
+  height: 50%;
+}
+.searchBarContainer form .allInputsBox .originDestiny .selects .inputBox .icon {
+  color: white;
+  text-shadow: 0px 0px 2px black;
+}
+.searchBarContainer form .allInputsBox .originDestiny .selects .inputBox:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.searchBarContainer form .allInputsBox .originDestiny .selects .inputBox:hover .icon {
+  color: #3884FE;
+  filter: drop-shadow(0px 0px 4px white);
+}
+.searchBarContainer form .allInputsBox .originDestiny .selects .inputBox:hover input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.searchBarContainer form .allInputsBox .originDestiny .selects .ulBox {
+  height: auto;
+}
+.searchBarContainer form .allInputsBox .originDestiny .selects .ulBox ul {
+  background-color: white;
+  list-style: none;
+  position: absolute;
+}
+.searchBarContainer form .allInputsBox .originDestiny .selects .ulBox ul li {
+  display: flex;
+  border-radius: 2px;
+  border: solid 1px #b1b1b1;
+  flex-direction: column;
+  justify-content: center;
+}
+.searchBarContainer form .allInputsBox .originDestiny .selects .ulBox ul li :hover {
+  box-shadow: 0px 0px 5px #3884FE;
+}
+.searchBarContainer form .allInputsBox .originDestiny .selects .ulBox ul button {
+  transition: 0.1s;
+  width: 100%;
+  padding: 0.5rem 0.2rem;
+  text-align: start;
+  background-color: rgba(128, 128, 128, 0.1);
+  border: none;
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate {
+  align-items: center;
+  width: 100%;
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .selects {
+  padding: 0.5rem 0;
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .selects .inputBox .icon {
+  color: white;
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .selects .inputBox select {
+  background-color: transparent;
+  color: lightgray;
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .selects .inputBox select option {
+  background-color: white;
+  color: #828282;
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .selects .inputBox select option:hover {
+  background-color: #3884FE;
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .selects .inputBox:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .selects .inputBox:hover .icon {
+  color: #3884FE;
+  filter: drop-shadow(0px 0px 4px white);
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .dataBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .dataBox .selectsData {
+  width: 50%;
+  padding: 0 0.2rem;
+  text-shadow: 0px 0px 2px black;
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .dataBox .selectsData input {
+  font-size: 1.2rem;
+  color: lightgray;
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .dataBox .selectsData input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .dataBox .selectsData .labelDisableD {
+  opacity: 0.4;
+}
+.searchBarContainer form .allInputsBox .journeyBoxWithDate .dataBox .selectsData .inputBoxDisabled {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: #b1b1b1;
+  opacity: 0.4;
+}
+.searchBarContainer .botonBox {
+  width: 100%;
+  height: 6vh;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchBarContainer .botonBox button {
+  color: #ffffff;
+  background-color: transparent;
+  height: 100%;
+  width: 40%;
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  box-shadow: 1px 1px 3px white inset;
+}
+.searchBarContainer .botonBox button .iconSearch {
+  margin: 0 0.5rem;
+}
+.searchBarContainer .botonBox button:hover {
+  box-shadow: -2px -2px 3px black inset;
+}
+.searchBarContainer .botonBox button:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5) inset;
+}
+.searchBarContainer label {
+  text-shadow: 0px 0px 2px black;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+}
+.searchBarContainer input {
+  color: #4d4d4d;
+  border: none;
+  background: transparent;
+  width: 85%;
+  font-size: 1.3rem;
+}
+.searchBarContainer select {
+  color: #828282;
+  padding: 3px;
+  transition: 0.2s;
+  border: none;
+  width: inherit;
+  font-size: 1.2rem;
+}
+.searchBarContainer select :hover {
+  color: #000000;
+}
+.searchBarContainer *:focus {
+  outline: none;
+}
+.searchBarContainer .inputBox {
+  border-radius: 5px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  background: transaprent;
+  padding-left: 0.3rem;
+}
+.searchBarContainer .inputBox input {
+  color: white;
+}
+.searchBarContainer .inputBox input::placeholder {
+  color: rgba(211, 211, 211, 0.6);
+}
+.searchBarContainer .icon {
+  color: #b1b1b1;
+  width: 15%;
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+.searchBarContainer .icon :hover {
+  color: #3884FE;
+}
+.searchBarContainer div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .searchBarContainer input {
+    font-size: 1.5rem;
+  }
+  .searchBarContainer .dataBox {
+    width: 80%;
+  }
+  .searchBarContainer .dataBox .selectsData {
+    margin-right: 1rem;
+  }
+  .searchBarContainer .dataBox .selectsData input {
+    font-size: 1.3rem;
+  }
+  .searchBarContainer .selects .inputBox select {
+    font-size: 1.3rem;
+  }
+  .searchBarContainer .selects .inputBox .icon {
+    width: 10%;
+  }
+  .searchBarContainer .botonBox .boton {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .searchBarContainer {
+    box-shadow: 1px 1px 5px black;
+    width: 50vw;
+  }
+  .searchBarContainer form {
+    height: 30vh;
+    width: 98%;
+  }
+  .searchBarContainer form .allInputsBox {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .searchBarContainer form .allInputsBox .originDestiny {
+    width: 35%;
+    height: 80%;
+    justify-content: center;
+  }
+  .searchBarContainer form .allInputsBox .originDestiny .selects {
+    width: 90%;
+    height: 5em;
+  }
+  .searchBarContainer form .allInputsBox .originDestiny .selects label {
+    font-size: 1rem;
+  }
+  .searchBarContainer form .allInputsBox .originDestiny .selects input {
+    height: 100%;
+    font-size: 1rem;
+  }
+  .searchBarContainer form .allInputsBox .journeyBoxWithDate {
+    width: 30%;
+  }
+  .searchBarContainer form .allInputsBox .journeyBoxWithDate label {
+    font-size: 0.8rem;
+  }
+  .searchBarContainer form .allInputsBox .journeyBoxWithDate .selects {
+    width: 95%;
+  }
+  .searchBarContainer form .allInputsBox .journeyBoxWithDate .selects .inputBox select {
+    height: 100%;
+    font-size: 0.8rem;
+  }
+  .searchBarContainer form .allInputsBox .journeyBoxWithDate .dataBox {
+    width: 95%;
+    flex-direction: column;
+  }
+  .searchBarContainer form .allInputsBox .journeyBoxWithDate .dataBox .selectsData {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .searchBarContainer form .allInputsBox .journeyBoxWithDate .dataBox .selectsData input {
+    font-size: 0.8rem;
+  }
+  .searchBarContainer .dataBox {
+    width: 80%;
+  }
+  .searchBarContainer .dataBox .selectsData {
+    margin-right: 1rem;
+  }
+  .searchBarContainer .dataBox .selectsData input {
+    font-size: 1.3rem;
+  }
+  .searchBarContainer .selects .inputBox select {
+    font-size: 1.3rem;
+  }
+  .searchBarContainer .selects .inputBox .icon {
+    width: 10%;
+  }
+  .searchBarContainer .botonBox {
+    width: 50%;
+  }
+  .searchBarContainer .botonBox .boton {
+    width: 40%;
+  }
+}
+.ErrorBox {
+  transition: 0.2s;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+.ErrorBox .errorr {
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: transparent;
+  height: 60%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.ErrorBox .errorr h2,
+.ErrorBox .errorr p {
+  font-size: 1.6rem;
+  color: white;
+  text-shadow: 0px 0px 50px #3884FE;
+}
+.ErrorBox .errorr .exclamation {
+  color: yellow;
+  filter: drop-shadow(0px 0px 2px black);
+  font-size: 4em;
+}
+.ErrorBox .errorr button {
+  color: #ffffff;
+  background-color: #146eff;
+  height: 2em;
+  width: 6em;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  box-shadow: -1px -1px 3px black inset;
+}
+.ErrorBox .errorr button:hover {
+  box-shadow: -2px -2px 3px black inset;
+}
+.ErrorBox .errorr button:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+.disabled * {
+  display: none;
+}
+
+/*# sourceMappingURL=Searchbar.module.css.map */

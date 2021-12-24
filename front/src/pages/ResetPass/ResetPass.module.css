@@ -1,0 +1,118 @@
+.resetPage {
+  background-color: #3884FE;
+  background-image: url("../../assets/planes/plane-3.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30rem;
+  height: 100vh;
+  position: relative;
+}
+.resetPage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.resetContent {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 3rem 4rem;
+  width: 90%;
+  max-width: 30rem;
+  position: relative;
+  z-index: 10;
+}
+.resetLogo {
+  width: 9rem;
+}
+.resetInput {
+  position: relative;
+  width: 100%;
+}
+.resetInput input {
+  border: none;
+  border-bottom: 1px solid #828282;
+  outline: none;
+  padding: 0.8rem 0.3rem 0.8rem 0;
+  padding-left: 3rem;
+  width: 100%;
+}
+.resetInput input::placeholder {
+  color: #b1b1b1;
+}
+.resetInput input:focus {
+  border-bottom-color: #3884FE;
+}
+.resetInputIcon {
+  color: #b1b1b1;
+  font-size: 25px;
+  position: absolute;
+  top: 20%;
+  left: 0.5rem;
+  transition: all 0.5s;
+}
+.resetInputIconError {
+  top: 10%;
+  color: #ff0000;
+}
+.resetInputError {
+  color: #ff0000;
+}
+.resetInputError:focus {
+  border-bottom-color: #ff0000 !important;
+}
+.resetInputErrorMessage {
+  display: inline-block;
+  color: #ff0000;
+  padding-top: 5px;
+  text-align: center;
+  width: 100%;
+}
+.resetButton {
+  background-color: #3884FE;
+  color: #ffffff;
+  border: 1px solid #3884FE;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  padding: 0.8rem;
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.5s;
+}
+.resetButton:hover {
+  background-color: #5194fe;
+}
+.resetButton:active {
+  background-color: #1f74fe;
+}
+.resetRegister {
+  font-weight: 500;
+  color: #4d4d4d;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.resetRegister:hover {
+  color: #3884FE;
+}
+.resetRegister:active {
+  color: #4d4d4d;
+}
+
+/*# sourceMappingURL=ResetPass.module.css.map */

@@ -1,0 +1,194 @@
+.updatePage {
+  background-color: #3884FE;
+  background-image: url("../../assets/planes/plane-3.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 60rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.updatePage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.updatePage img {
+  width: 9rem;
+}
+.updatePageTitle {
+  border-bottom: #3884FE solid 2px;
+  font-size: 1.8rem;
+  margin: 2rem auto 3rem;
+}
+.updatePageTitle svg {
+  color: #4d4d4d;
+  font-size: 1.5rem;
+}
+.updatePageContent {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+  max-width: 35rem;
+  width: 90%;
+  margin: 6rem auto;
+  position: relative;
+  z-index: 10;
+}
+.updatePageForm {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-align: left;
+  width: 100%;
+  max-width: 22rem;
+}
+.updatePageFormInput {
+  position: relative;
+  width: 100%;
+}
+.updatePageFormInput input {
+  border: none;
+  border-bottom: 1px solid #828282;
+  outline: none;
+  padding: 0.8rem 0.3rem 0.8rem 0;
+  padding-left: 3rem;
+  width: 100%;
+}
+.updatePageFormInput input::placeholder {
+  color: #b1b1b1;
+}
+.updatePageFormInput input:focus {
+  border-bottom-color: #3884FE;
+}
+.updatePageFormInput label {
+  position: absolute;
+  top: -100000rem;
+  left: -100000rem;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.updatePageFormInputIcon {
+  color: #b1b1b1;
+  font-size: 25px;
+  position: absolute;
+  top: 20%;
+  left: 0.5rem;
+  transition: all 0.5s;
+}
+.updatePageFormInputIconError {
+  top: 10%;
+  color: #ff0000;
+}
+.updatePageFormInputError {
+  color: #ff0000;
+}
+.updatePageFormInputError:focus {
+  border-bottom-color: #ff0000 !important;
+}
+.updatePageFormInputErrorMessage {
+  display: inline-block;
+  color: #ff0000;
+  padding-top: 5px;
+  text-align: center;
+  width: 100%;
+}
+.updatePageForm button {
+  background-color: #3884FE;
+  color: #ffffff;
+}
+.updatePageForm button:hover {
+  background-color: #5194fe;
+}
+.updatePageForm button:active {
+  background-color: #1f74fe;
+}
+.updatePageButtonsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.updatePageButtonsContainer a {
+  text-decoration: none;
+}
+.updatePageButtonsContainer button {
+  background-color: transparent;
+  border: 1px solid #3884FE;
+  border-radius: 5px;
+  color: #4d4d4d;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  max-width: 20rem;
+  margin-top: 1rem;
+  transition: all 0.5s;
+}
+.updatePageButtonsContainer button:hover {
+  transform: scale(1.01);
+}
+.updatePageButtonsContainer button:active {
+  transform: scale(0.99);
+}
+.updatePageButtonsContainer button:first-child {
+  border-color: #b1b1b1;
+}
+.updatePageButtonsContainer button:first-child:hover {
+  border-color: #3884FE;
+  background-color: transparent;
+}
+.updatePageButtonsContainer button:nth-child(even) {
+  background-color: #3884FE;
+  color: #ffffff;
+}
+
+.inputFile {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  transition: all 0.3s;
+  top: unset;
+  left: unset;
+  height: auto;
+  width: 100%;
+  overflow: visible;
+}
+.inputFileBtn {
+  cursor: pointer;
+  background-color: #ff0000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+progress {
+  width: 100%;
+}
+
+/*# sourceMappingURL=UpdateUserProfile.module.css.map */

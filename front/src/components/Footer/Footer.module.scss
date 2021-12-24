@@ -1,0 +1,57 @@
+@import "../../scss/variables";
+
+.Footer {
+  // border: 1px solid rgb(85, 85, 85);
+  border-top: 4px solid $main-color;
+  display: flex;
+  width: 100%;
+  font-family: $content-font;
+  font-size: 1.1rem;
+  font-weight: $medium-font;
+  position: static;
+  bottom: 0;
+
+  &Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    text-align: center;
+    width: 95%;
+    max-width: calc($notebook-width - 5rem);
+
+    a {
+      color: $black;
+      text-decoration: none;
+      transition: all 0.5s;
+
+      &:hover {
+        color: $main-color;
+      }
+      &:active {
+        color: $darkgray;
+      }
+    }
+
+    p {
+      order: 2;
+    }
+
+    @media screen and (min-width: 700px) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 3rem;
+      width: 85%;
+
+      p {
+        order: -1;
+      }
+
+      img {
+        margin-right: 100px;
+      }
+    }
+  }
+}

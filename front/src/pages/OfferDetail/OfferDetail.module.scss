@@ -1,0 +1,142 @@
+@import "../../scss/variables";
+
+.offerDetail {
+    background-color: $black;
+    background-image: url("../../assets/planes/plane-3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+
+    &Content {
+        background-color: #fff;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin: 8rem auto;
+        max-width: 55rem;
+        padding: 3rem 1rem;
+        position: relative;
+        width: 90%;
+        z-index: 10;
+
+        @media screen and (min-width: $notebook-width) {
+            padding: 4rem 3rem 6rem;
+            width: 90%;
+        }
+
+        img {
+            width: 8rem;
+        }
+
+    }
+
+    &Extense {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    &Buttons {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 2rem;
+        max-width: 30rem;
+        margin: 2rem auto 3rem;
+    }
+
+    &Button {
+        cursor: pointer;
+        display: block;
+        padding: .9rem 4.5rem;
+        border-radius: 5px;
+        font-weight: $bold-font;
+        text-decoration: none;
+        background-color: $main-color;
+        color: #fff;
+        transition: all .5s;
+
+        &:hover {
+            background-color: lighten($main-color, 5%);
+            color: $white;
+            transform: scale(1.02);
+        }
+
+        &:active {
+            color: $white;
+            background-color: darken($main-color, 10%);
+            transform: scale(1);
+        }
+    }
+
+    &BackButton {
+        background-color: transparent;
+        border: 2px solid $main-color;
+        border-radius: 5px;
+        color: $main-color;
+        cursor: pointer;
+        font-weight: $bold-font;
+        outline: none;
+        padding: .8rem 2rem;
+        display: flex;
+        align-items: center;
+        transition: all .5s;
+        gap: .5rem;
+
+        svg {
+            font-size: 1.2rem;
+            transform: rotate(180deg);
+        }
+
+        &:hover {
+            background-color: lighten($main-color, 5%);
+            color: $white;
+            transform: scale(1.02);
+        }
+
+        &:active {
+            color: $white;
+            background-color: darken($main-color, 10%);
+            transform: scale(1);
+        }
+    }
+
+    &Recomendations {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        // border: 1px solid $main-color;
+        width: 90%;
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid $main-color;
+        }
+    }
+}

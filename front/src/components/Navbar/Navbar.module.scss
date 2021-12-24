@@ -1,0 +1,101 @@
+@import "../../scss/variables";
+
+.navBar {
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid $lightgray;
+  z-index: 2000;
+}
+
+.nav {
+  margin: 1rem auto;
+  display: flex;
+  width: 90%;
+  max-width: 1500px;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 8.5rem;
+  }
+
+  a {
+
+    text-decoration: none;
+    color: $black;
+    font-size: 1.4rem;
+    font-weight: $bold-font;
+    font-family: $content-font;
+  }
+}
+
+.user {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+
+  }
+
+  &Login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    // span {
+    //   &:first-child {
+    //     display: none;
+    //   }
+    // }
+
+    &Image {
+      width: 3rem;
+      height: 3rem;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      position: relative;
+    }
+
+  }
+
+  svg {
+    font-size: 2.3rem;
+  }
+
+  &Img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid #b1b1b1;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &Link {
+      span {
+        display: block;
+      }
+    }
+  }
+}

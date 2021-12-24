@@ -1,0 +1,234 @@
+.pageContainer {
+  background: url("../../assets/planes/plane-3.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  position: relative;
+}
+.pageContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.pageContainer .userProfileContainer {
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  width: 100vw;
+  margin-top: 12vh;
+  z-index: 10;
+}
+.pageContainer .imgAndNameContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+.pageContainer .imgAndNameContainer .ProfileImg img {
+  width: 9rem;
+  height: 9rem;
+}
+.pageContainer .imgAndNameContainer .h1LogoutBox {
+  height: initial;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.pageContainer .imgAndNameContainer .h1LogoutBox h1 {
+  padding: 0 0.5rem;
+  font-size: 30px;
+  width: 100%;
+  height: 70%;
+  height: auto;
+}
+.pageContainer .imgAndNameContainer .h1LogoutBox .LogoutBox {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0.5rem;
+}
+.pageContainer .imgAndNameContainer .h1LogoutBox .LogoutBox .btnLogout {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+.pageContainer .imgAndNameContainer .h1LogoutBox .LogoutBox .btnLogout .icon {
+  transition: 0.1s;
+  color: #828282;
+  font-size: 2rem;
+}
+.pageContainer .imgAndNameContainer .h1LogoutBox .LogoutBox .btnLogout .icon:hover {
+  color: red;
+  filter: drop-shadow(1px 1px 2px black);
+}
+.pageContainer .imgAndNameContainer .h1LogoutBox .cardOptionsFavs {
+  justify-content: center;
+  align-items: center;
+}
+.pageContainer .imgAndNameContainer .h1LogoutBox .btnUpdateBox {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.pageContainer .imgAndNameContainer .h1LogoutBox .btnUpdateBox .btnLink {
+  background-color: #3884FE;
+  border-radius: 3px;
+  border: 1px solid #3884FE;
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.3s;
+}
+.pageContainer .imgAndNameContainer .h1LogoutBox .btnUpdateBox .btnLink:hover {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+.pageContainer .imgAndNameContainer .h1LogoutBox .btnUpdateBox .btnLink:active {
+  box-shadow: 1px 1px 3px black inset;
+}
+.pageContainer .imgAndNameContainer p {
+  transition: 0.5s;
+  display: none;
+}
+
+.cardOptionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.cardOptionsContainer .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  border-top: 1px solid #828282;
+  min-height: 12rem;
+}
+.cardOptionsContainer .card h1 {
+  border-bottom: 1px solid #3884FE;
+  font-size: 25px;
+}
+.cardOptionsContainer .card .cardOptions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 30vh;
+}
+.cardOptionsContainer .card .cardOptions .textBox {
+  display: flex;
+}
+.cardOptionsContainer .card .cardOptions .textBox p {
+  margin: 0 0.5rem;
+}
+.cardOptionsContainer .card .cardOptionsFavs {
+  justify-content: center;
+  align-items: center;
+}
+.cardOptionsContainer .card .btnUpdateBox {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.cardOptionsContainer .card .btnUpdateBox .btnLink {
+  background-color: #3884FE;
+  border-radius: 3px;
+  border: 1px solid #3884FE;
+  font-size: 0.8rem;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+  transition: 0.3s;
+}
+.cardOptionsContainer .card .btnUpdateBox .btnLink:hover {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+.cardOptionsContainer .card .btnUpdateBox .btnLink:active {
+  box-shadow: 1px 1px 3px black inset;
+}
+.cardOptionsContainer .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  position: relative;
+  flex-wrap: wrap;
+}
+.cardOptionsContainer .button p {
+  display: none;
+}
+.cardOptionsContainer .button .btn {
+  width: 100%;
+  height: 2rem;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  border-top: 1px solid #828282;
+}
+.cardOptionsContainer .button .btn button {
+  color: #fe3838;
+  background-color: transparent;
+  border: none;
+  transition: 0.3s;
+}
+.cardOptionsContainer .button .btn button:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .pageContainer .imgAndNameContainer .ProfileImg img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .pageContainer .imgAndNameContainer .LogoutBox {
+    height: 50%;
+    display: flex;
+  }
+  .pageContainer .imgAndNameContainer .LogoutBox .btnLogout {
+    height: initial;
+    height: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .LogoutBox .btnLogout:hover {
+    transition: 0.5s;
+    height: initial;
+  }
+  .LogoutBox .btnLogout:hover p {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    border: solid 1px gray;
+    padding: 2px;
+    border-radius: 2px;
+  }
+}
+
+/*# sourceMappingURL=UserProfile.module.css.map */

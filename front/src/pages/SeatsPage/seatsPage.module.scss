@@ -1,0 +1,168 @@
+@import "../../scss/variables";
+
+.container {
+  background-color: white;
+  backdrop-filter: blur(10px);
+  margin: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 10px;
+  width: 85%;
+}
+.rotulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+  padding: 4rem;
+  width: 100%;
+  gap: .5rem;
+}
+
+.columnaAInput {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+.inputs {
+  input {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.logo {
+  font-display: center;
+  justify-content: center;
+}
+.fila {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.columna {
+  width: 100%;
+  background-color: rgb(47, 124, 212);
+  padding: 1rem;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  margin: .5rem 0;
+}
+.oneCard {
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  margin: 2rem;
+}
+
+.other {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  size: 1rem;
+  p {
+    font-size: 0.7rem;
+  }
+  &Icon {
+    size: 1rem;
+  }
+}
+.otherBox {
+  display: flex;
+  width: 100%;
+}
+
+.allSeats {
+  background-image: url("../../assets/planes/plane-7.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+
+.buttonSubmit {
+  color: #ffffff;
+  background-color: rgb(47, 124, 212);
+  width: 60%;
+  border: none;
+  border-radius: 10px;
+  display: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: -1px -1px 3px darkgray;
+  background-position: center;
+}
+
+.buttonConfirm{
+    color: $black;
+    background-color: rgb(255, 255, 255);;
+    height: 4em;
+    width: 20em;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px -1px 3px darkgray;
+    position: relative;
+    bottom: 4rem;
+    font-weight:$bold-font;
+}
+
+.goHome{
+    background-color: black;
+    color: rgb(53, 7, 7);
+}
+.errorContainer{
+      background-image: url(../../assets/asientos.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: flex-end;
+}
+
+.buttondiv {
+  padding: 40px;
+  display: center;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .container {
+    display: flex;
+    gap: 4rem;
+    padding: 1rem 2rem;
+    width: 40%;
+  }
+  .columnaAInput {
+    width: 6%;
+  }
+}

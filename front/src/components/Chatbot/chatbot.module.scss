@@ -1,0 +1,66 @@
+@import "../../scss/variables.scss";
+
+
+.hidden{
+    display: none;
+    position: absolute;
+    right: -50%;
+}
+
+
+.cerrar{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color:#d10b0b ;
+    border-radius: 50%;
+    color:rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000
+}
+
+
+
+
+.visible{
+    max-width: 70%;
+    max-height: 46.8rem;
+    position:fixed;
+    right:1.5rem;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+}
+
+.icon{
+    font-size: 2.5rem;
+    color: $white;
+    margin-top: 0.3rem;
+}
+
+.chatButton {
+    cursor: pointer;
+    background-color: $main-color;
+    border: none;
+    border-radius: 50px;
+    padding: 0.4rem 0.6rem
+}
+
+.container {
+    width: 1%;
+    position:fixed;
+    right:1.5rem;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+}

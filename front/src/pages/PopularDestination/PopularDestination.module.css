@@ -1,0 +1,119 @@
+.sectionHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0 0;
+  position: relative;
+  min-height: 20rem;
+  height: 80vh;
+  width: 100%;
+}
+.sectionHeader h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+  z-index: 100;
+  max-width: 35rem;
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .sectionHeader h2 {
+    font-size: 3.5rem;
+  }
+}
+.sectionHeaderBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.sectionHeaderBackground img {
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+.sectionHeaderBackground::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.sectionDescription {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 5rem auto;
+  text-align: center;
+  max-width: 60rem;
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .sectionDescription {
+    font-size: 1.4rem;
+    margin: 9rem auto;
+  }
+}
+.sectionGallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  min-height: 20rem;
+  height: 50vh;
+  width: 100%;
+}
+.sectionGallery img {
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 50%;
+}
+.sectionGallery img:first-child {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .sectionGallery img:first-child {
+    display: block;
+  }
+}
+.sectionPlaces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin: 5rem auto;
+}
+.sectionPlaces h3 {
+  font-size: 2rem;
+  border-bottom: 2px solid #3884FE;
+}
+.sectionPlaces ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+  max-width: 75rem;
+  width: 75%;
+}
+@media screen and (min-width: 768px) {
+  .sectionPlaces ul {
+    width: 90%;
+  }
+}
+.sectionPlaces li {
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 20rem;
+}
+
+/*# sourceMappingURL=PopularDestination.module.css.map */

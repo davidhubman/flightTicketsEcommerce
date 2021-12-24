@@ -1,0 +1,39 @@
+@import "../../scss/variables";
+
+.popularDestinations {
+    background-color: $white;
+    font-family: $titles-font;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    margin: 5rem auto;
+    width: 100%;
+
+    h2 {
+        font-size: 1.7rem;
+        font-weight: $regular-font;
+        border-bottom: 2px solid $main-color;
+        margin-bottom: 4rem;
+        width: auto;
+        text-align: center;
+
+        @media screen and (min-width: $tablet-width) {
+            font-size: 2rem;
+        }
+    }
+}
+
+.cityCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 18rem));
+    grid-gap: 2rem 1rem;
+    justify-content: space-evenly;
+    max-width: calc($notebook-width - 5rem);
+    width: 80%;
+
+    a {
+        color: transparent;
+        text-decoration: none;
+    }
+}

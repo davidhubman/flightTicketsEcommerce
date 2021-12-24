@@ -1,0 +1,65 @@
+@keyframes loaderSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.LoadingScreen {
+  background-image: url(../../assets/airport/airport-1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .LoadingScreen {
+    background-position: center;
+  }
+}
+.LoadingScreen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -10;
+}
+.LoadingScreenContent {
+  color: #fff;
+  width: 80%;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.LoadingScreen img {
+  width: 50%;
+  max-width: 15rem;
+}
+.LoadingScreenLoader {
+  animation: loaderSpin 1s linear infinite;
+}
+
+/*# sourceMappingURL=LoadingScreen.module.css.map */

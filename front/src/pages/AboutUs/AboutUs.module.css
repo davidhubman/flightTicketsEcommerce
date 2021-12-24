@@ -1,0 +1,397 @@
+.AboutUsTotal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.AboutUsTotal .titleBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.AboutUsTotal .titleBox .linkHome {
+  transition: 0.4s;
+  color: #3884FE;
+  position: absolute;
+  left: 3vw;
+  font-size: 1.5rem;
+  filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.4));
+}
+.AboutUsTotal .titleBox .linkHome :hover {
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
+}
+.AboutUsTotal .titleBox h2 {
+  font-size: 2rem;
+  border-bottom: solid 2px #3884FE;
+}
+
+.AboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.cardGonza {
+  background-color: aqua;
+  background-image: url("./photo/fotoGonza.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 21rem;
+  height: 80vh;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+.cardDavid {
+  background-color: aqua;
+  background-image: url("./photo/noimg2.jpg");
+  background-size: cover;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 21rem;
+  height: 80vh;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+.cardBautista {
+  background-color: aqua;
+  background-image: url("./photo/fotoBautista.jpeg");
+  background-size: cover;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 21rem;
+  height: 80vh;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+.cardAngel {
+  background-color: aqua;
+  background-image: url("./photo/jose-angel-rey.png");
+  background-size: cover;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 21rem;
+  height: 80vh;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+.cardEze {
+  background-color: aqua;
+  background-image: url("./photo/fotoEze.jpeg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 21rem;
+  height: 80vh;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+.cardEsteban {
+  background-color: aqua;
+  background-image: url("./photo/fotoEsteban.jpeg");
+  background-size: cover;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 21rem;
+  height: 80vh;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+.cardFer {
+  background-color: aqua;
+  background-image: url("./photo/fotoFer.jpeg");
+  background-size: cover;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 21rem;
+  height: 80vh;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+.nameBox {
+  width: 100%;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nameBox h4 {
+  border-bottom: solid 2px #3884FE;
+  text-shadow: 1px 1px 5px black;
+  border-radius: 4px;
+  color: white;
+  opacity: 0.9;
+  font-size: 1.8rem;
+}
+
+.linkBox {
+  width: 100%;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.linkBox a {
+  font-size: 1.8rem;
+  color: white;
+  filter: drop-shadow(1px 1px 3px black);
+  padding: 0.5rem;
+  transition: 0.1s;
+}
+.linkBox a:hover {
+  color: #3884FE;
+}
+.linkBox a:active {
+  color: #3884FE;
+  filter: brightness(0.8);
+}
+
+@media screen and (min-width: 768px) {
+  .AboutUs {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .cardFer,
+.cardGonza,
+.cardAngel,
+.cardEze,
+.cardBautista,
+.cardDavid,
+.cardEsteban {
+    margin: 0.5rem 0.5rem;
+    filter: brightness(0.4);
+    transition: 0.1s;
+    width: 12rem;
+    height: 50vh;
+  }
+  .cardFer h4,
+.cardGonza h4,
+.cardAngel h4,
+.cardEze h4,
+.cardBautista h4,
+.cardDavid h4,
+.cardEsteban h4 {
+    display: none;
+    font-size: 1.3rem;
+  }
+  .cardFer a,
+.cardGonza a,
+.cardAngel a,
+.cardEze a,
+.cardBautista a,
+.cardDavid a,
+.cardEsteban a {
+    display: none;
+    font-size: 1.8rem;
+  }
+
+  .cardFer:hover,
+.cardGonza:hover,
+.cardAngel:hover,
+.cardEze:hover,
+.cardBautista:hover,
+.cardDavid:hover,
+.cardEsteban:hover {
+    filter: brightness(1);
+  }
+  .cardFer:hover h4,
+.cardGonza:hover h4,
+.cardAngel:hover h4,
+.cardEze:hover h4,
+.cardBautista:hover h4,
+.cardDavid:hover h4,
+.cardEsteban:hover h4 {
+    display: inherit;
+  }
+  .cardFer:hover a,
+.cardGonza:hover a,
+.cardAngel:hover a,
+.cardEze:hover a,
+.cardBautista:hover a,
+.cardDavid:hover a,
+.cardEsteban:hover a {
+    display: inherit;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .AboutUs {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .cardFer,
+.cardGonza,
+.cardAngel,
+.cardEze,
+.cardBautista,
+.cardDavid,
+.cardEsteban {
+    filter: brightness(0.4);
+    transition: 0.2s;
+    width: 20rem;
+    height: 70vh;
+  }
+  .cardFer h4,
+.cardGonza h4,
+.cardAngel h4,
+.cardEze h4,
+.cardBautista h4,
+.cardDavid h4,
+.cardEsteban h4 {
+    display: none;
+    font-size: 1.3rem;
+  }
+  .cardFer a,
+.cardGonza a,
+.cardAngel a,
+.cardEze a,
+.cardBautista a,
+.cardDavid a,
+.cardEsteban a {
+    display: none;
+    font-size: 1.8rem;
+  }
+
+  .cardFer:hover,
+.cardGonza:hover,
+.cardAngel:hover,
+.cardEze:hover,
+.cardBautista:hover,
+.cardDavid:hover,
+.cardEsteban:hover {
+    filter: brightness(1);
+  }
+  .cardFer:hover h4,
+.cardGonza:hover h4,
+.cardAngel:hover h4,
+.cardEze:hover h4,
+.cardBautista:hover h4,
+.cardDavid:hover h4,
+.cardEsteban:hover h4 {
+    display: inherit;
+  }
+  .cardFer:hover a,
+.cardGonza:hover a,
+.cardAngel:hover a,
+.cardEze:hover a,
+.cardBautista:hover a,
+.cardDavid:hover a,
+.cardEsteban:hover a {
+    display: inherit;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .AboutUs {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cardFer,
+.cardGonza,
+.cardAngel,
+.cardEze,
+.cardBautista,
+.cardDavid,
+.cardEsteban {
+    margin: 1rem 2rem;
+    filter: brightness(0.4);
+    transition: 0.2s;
+    height: 70vh;
+  }
+  .cardFer h4,
+.cardGonza h4,
+.cardAngel h4,
+.cardEze h4,
+.cardBautista h4,
+.cardDavid h4,
+.cardEsteban h4 {
+    display: none;
+    font-size: 1.6rem;
+  }
+  .cardFer a,
+.cardGonza a,
+.cardAngel a,
+.cardEze a,
+.cardBautista a,
+.cardDavid a,
+.cardEsteban a {
+    display: none;
+    font-size: 2rem;
+  }
+
+  .cardFer:hover,
+.cardGonza:hover,
+.cardAngel:hover,
+.cardEze:hover,
+.cardBautista:hover,
+.cardDavid:hover,
+.cardEsteban:hover {
+    filter: brightness(1);
+  }
+  .cardFer:hover h4,
+.cardGonza:hover h4,
+.cardAngel:hover h4,
+.cardEze:hover h4,
+.cardBautista:hover h4,
+.cardDavid:hover h4,
+.cardEsteban:hover h4 {
+    display: inherit;
+  }
+  .cardFer:hover a,
+.cardGonza:hover a,
+.cardAngel:hover a,
+.cardEze:hover a,
+.cardBautista:hover a,
+.cardDavid:hover a,
+.cardEsteban:hover a {
+    display: inherit;
+  }
+}
+
+/*# sourceMappingURL=AboutUs.module.css.map */

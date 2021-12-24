@@ -1,0 +1,56 @@
+.navBar {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid #b1b1b1;
+  z-index: 2000;
+}
+
+.nav {
+  margin: 1rem auto;
+  display: flex;
+  width: 90%;
+  max-width: 1500px;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav img {
+  width: 8.5rem;
+}
+.nav a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+
+.userLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.userLink span {
+  display: none;
+}
+.user svg {
+  font-size: 2.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .userLink span {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=Navbar.module.css.map */

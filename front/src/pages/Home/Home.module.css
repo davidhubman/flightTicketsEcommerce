@@ -1,0 +1,12 @@
+.allHome {
+  background-image: url("../../assets/planes/plane-4.webp");
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=Home.module.css.map */

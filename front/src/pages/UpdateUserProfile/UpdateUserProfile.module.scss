@@ -1,0 +1,225 @@
+@import "../../scss/variables";
+
+.updatePage {
+    background-color: $main-color;
+    background-image: url("../../assets/planes/plane-3.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 60rem;
+    // height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    img {
+        width: 9rem;
+    }
+
+    &Title {
+        border-bottom: $main-color solid 2px;
+        font-size: 1.8rem;
+        margin: 2rem auto 3rem;
+
+        svg {
+            color: $darkgray;
+            font-size: 1.5rem;
+        }
+    }
+
+    &Content {
+        background-color: $white;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        max-width: 35rem;
+        width: 90%;
+        margin: 6rem auto;
+        position: relative;
+        z-index: 10;
+    }
+
+
+    &Form {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        text-align: left;
+        width: 100%;
+        max-width: 22rem;
+
+        &Input {
+            position: relative;
+            width: 100%;
+
+            input {
+                border: none;
+                border-bottom: 1px solid $gray;
+                outline: none;
+                padding: .8rem .3rem .8rem 0;
+                padding-left: 3rem;
+                width: 100%;
+
+                &::placeholder {
+                    color: $lightgray;
+                }
+
+                &:focus {
+                    border-bottom-color: $main-color;
+                }
+            }
+
+            label {
+                position: absolute;
+                top: -100000rem;
+                left: -100000rem;
+                height: 1px;
+                width: 1px;
+                overflow: hidden;
+            }
+
+            &Icon {
+                color: $lightgray;
+                font-size: 25px;
+                position: absolute;
+                top: 20%;
+                left: .5rem;
+                transition: all .5s;
+
+                &Error {
+                    top: 10%;
+                    color: #ff0000
+                }
+            }
+
+            &Error {
+                color: #ff0000;
+
+                &:focus {
+                    border-bottom-color: #ff0000 !important;
+
+                }
+            }
+
+            &ErrorMessage {
+                display: inline-block;
+                color: #ff0000;
+                padding-top: 5px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        button {
+            background-color: $main-color;
+            color: $white;
+
+            &:hover {
+                background-color: lighten($main-color, 5%);
+            }
+
+            &:active {
+                background-color: darken($main-color, 5%);
+            }
+        }
+    }
+
+    &ButtonsContainer {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            background-color: transparent;
+            border: 1px solid $main-color;
+            border-radius: 5px;
+            color: $darkgray;
+            cursor: pointer;
+            font-weight: $bold-font;
+            outline: none;
+            padding: .8rem 1rem;
+            width: 100%;
+            max-width: 20rem;
+            margin-top: 1rem;
+            transition: all .5s;
+
+            &:hover {
+                transform: scale(1.01);
+            }
+
+            &:active {
+                transform: scale(.99);
+            }
+
+            &:first-child {
+                border-color: $lightgray;
+
+                &:hover {
+                    border-color: $main-color;
+                    background-color: transparent;
+                }
+            }
+
+            &:nth-child(even) {
+                background-color: $main-color;
+                color: $white;
+            }
+        }
+
+    }
+}
+
+.inputFile {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+    position: relative;
+    transition: all .3s;
+    top: unset;
+    left: unset;
+    height: auto;
+    width: 100%;
+    overflow: visible;
+
+    &Btn {
+        cursor: pointer;
+        background-color: #ff0000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+progress{
+    width: 100%;
+}

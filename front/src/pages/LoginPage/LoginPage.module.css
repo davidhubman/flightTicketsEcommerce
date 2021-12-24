@@ -1,0 +1,158 @@
+.loginPage {
+  background: url("../../assets/planes/plane-3.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+.loginPage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.loginPageContent {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 3rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 4rem auto 2rem;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  width: 90%;
+  max-width: 30rem;
+}
+.loginPageContent img {
+  width: 9rem;
+  margin-bottom: 1rem;
+}
+.loginPageContent a {
+  font-weight: 500;
+  color: #4d4d4d;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.loginPageContent a:hover {
+  color: #3884FE;
+}
+.loginPageContent a:active {
+  color: #b1b1b1;
+}
+.loginPageContent button {
+  background-color: transparent;
+  border: 1px solid #3884FE;
+  border-radius: 5px;
+  color: #4d4d4d;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  padding: 0.8rem;
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.5s;
+}
+.loginPageContent button svg {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.loginPageContent button:hover {
+  transform: scale(1.01);
+}
+.loginPageContent button:active {
+  border-color: #b1b1b1;
+  transform: scale(0.99);
+}
+.loginForm {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-align: left;
+  width: 100%;
+  max-width: 20rem;
+}
+.loginFormInput {
+  position: relative;
+  width: 100%;
+}
+.loginFormInput input {
+  border: none;
+  border-bottom: 1px solid #828282;
+  outline: none;
+  padding: 0.8rem 0.3rem 0.8rem 0;
+  padding-left: 3rem;
+  width: 100%;
+}
+.loginFormInput input::placeholder {
+  color: #b1b1b1;
+}
+.loginFormInput input:focus {
+  border-bottom-color: #3884FE;
+}
+.loginFormInput label {
+  position: absolute;
+  top: -100000rem;
+  left: -100000rem;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.loginFormInputIcon {
+  color: #b1b1b1;
+  font-size: 25px;
+  position: absolute;
+  top: 20%;
+  left: 0.5rem;
+  transition: all 0.5s;
+}
+.loginFormInputIconError {
+  top: 10%;
+  color: #ff0000;
+}
+.loginFormInputError {
+  color: #ff0000;
+}
+.loginFormInputError:focus {
+  border-bottom-color: #ff0000 !important;
+}
+.loginFormInputErrorMessage {
+  display: inline-block;
+  color: #ff0000;
+  padding-top: 5px;
+  text-align: center;
+  width: 100%;
+}
+.loginForm button {
+  background-color: #3884FE;
+  color: #ffffff;
+}
+.loginForm button:hover {
+  background-color: #5194fe;
+}
+.loginForm button:active {
+  background-color: #1f74fe;
+}
+
+.error {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+/*# sourceMappingURL=LoginPage.module.css.map */

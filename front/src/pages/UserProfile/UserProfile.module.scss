@@ -1,0 +1,391 @@
+@import "../../scss/variables";
+
+.user {
+  background: url("../../assets/planes/plane-3.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  &Container {
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: $white;
+    width: 90%;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    margin: 12vh 0;
+    z-index: 10;
+    border-radius: 20px;
+  }
+
+  &Section {
+    &ImgAndName {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      margin: 2rem 0;
+      gap: 2rem;
+
+      img {
+        border: 1px solid $lightgray;
+        width: 9rem;
+        height: 9rem;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+      }
+
+      h1 {
+        margin: 0 0 2rem 0;
+        font-weight: $bold-font;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .logOut {
+    &Box {
+      width: 100%;
+      display: flex;
+      padding: 0 0.5rem;
+      justify-content: flex-end;
+    }
+
+    &Button {
+      border: none;
+      background-color: transparent;
+      padding: 5px;
+
+      &Icon {
+        transition: 0.1s;
+        color: $gray;
+        font-size: 2rem;
+
+        &:hover {
+          color: #d10b0b;
+          filter: drop-shadow(1px 1px 2px black);
+        }
+      }
+    }
+  }
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  border-top: 1px solid $gray;
+  min-height: 12rem;
+
+  &:first-child {
+    width: 100%;
+    max-width: 20rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgb(148 148 148 / 50%);
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  &:nth-child(even) {
+    margin: 2rem 0;
+  }
+
+
+  h1 {
+    border-bottom: 2px solid $main-color;
+    margin: 0 0 2rem 0;
+    font-weight: $bold-font;
+    font-size: 1.5rem;
+  }
+
+  &Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  &Update {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+
+    &Button {
+      background-color: $main-color;
+      border-radius: 3px;
+      border: 1px solid $main-color;
+      font-size: .9rem;
+      color: $white;
+      text-decoration: none;
+      padding: .6rem 1rem;
+      transition: 0.3s;
+
+      &:hover {
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+      }
+
+      &:active {
+        box-shadow: 1px 1px 3px black inset;
+      }
+    }
+  }
+
+  &Favs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+  &TextBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+
+    p {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+.cardFav {
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 10px rgb(148 148 148 / 50%);
+  font-size: 2.4rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+
+  &City {
+    margin-top: 1.5rem;
+
+    p {
+      font-weight: $bold-font;
+    }
+  }
+
+  &Button {
+    &X {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+
+    &Delete {
+      background-color: #d10b0b;
+      color: #ffffff;
+      cursor: pointer;
+      border: none;
+      display: flex;
+      align-items: center;
+      border-radius: 2px;
+      padding: 0.3rem 0.5rem;
+      transition: all .5s;
+
+      &:hover {
+        background-color: #a80d0d;
+      }
+    }
+  }
+
+  &JourneyAndPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    text-align: center;
+
+  }
+
+  &Passengers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    text-align: center;
+
+  }
+
+  &PassengersDetail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    text-align: center;
+  }
+
+  span {
+    font-weight: $bold-font;
+  }
+
+  &Buttons {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem auto;
+
+    button {
+      padding: 0.7rem 0;
+      font-size: .9rem;
+      font-family: $content-font;
+      width: 100%;
+      background-color: $main-color;
+      color: $white;
+      border-radius: 5px;
+      border: 2px solid $main-color;
+      cursor: pointer;
+      transition: all .5s;
+
+      &:first-child {
+        background-color: white;
+        color: #3884FE;
+        font-weight: 700;
+      }
+
+      &:hover {
+        transform: scale(1.02);
+      }
+
+      &:active {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+
+
+
+.buttons {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto 4rem;
+  gap: 2rem;
+  max-width: 40rem;
+
+  &Delete {
+    cursor: pointer;
+    color: $white;
+    background-color: #d10b0b;
+    border: none;
+    transition: 0.3s;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+      transform: none;
+    }
+  }
+
+  &LogOut {
+    color: $main-color;
+    cursor: pointer;
+    background-color: $white;
+    border: 1px solid $main-color;
+    transition: 0.3s;
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+      transform: none;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .userContainer {
+    width: 70%;
+  }
+
+  .cards {
+    &Favs {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+  }
+}
+
+
+.ticketCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+
+  h3 {
+    font-size: 1.1rem;
+    border-bottom: 2px solid $main-color;
+  }
+}

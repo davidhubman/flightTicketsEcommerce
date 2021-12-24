@@ -1,0 +1,297 @@
+@import "../../scss/variables";
+
+.page {
+  background-color: #fff;
+  background-image: url("../../assets/airport/airport-1.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+.AboutUsTotal {
+  background-color: $white;
+  width: 90%;
+  border-radius: 1rem;
+  max-width: 75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem auto;
+  padding: 2rem 0;
+  z-index: 10;
+
+  .titleBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0 4rem;
+
+    img {
+      width: 8rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+
+      //   width: auto;
+      border-bottom: solid 2px $main-color;
+    }
+  }
+}
+
+.AboutUs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 2rem;
+  row-gap: 3rem;
+  padding-bottom: 2rem;
+  width: 90%;
+}
+
+.cardGonza {
+  background-image: url("./photo/fotoGonza.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem .5rem 2rem;
+  width: 85%;
+  max-width: 18rem;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.cardDavid {
+  background-image: url("./photo/fotoDavid.jpeg");
+  background-size: cover;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem .5rem 2rem;
+  width: 85%;
+  max-width: 18rem;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.cardBautista {
+  background-color: aqua;
+  background-image: url("./photo/fotoBautista.jpeg");
+  background-size: cover;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem .5rem 2rem;
+  width: 85%;
+  max-width: 18rem;
+  height: 25rem;
+  object-fit: cover;
+
+}
+
+.cardAngel {
+  background-image: url("./photo/jose-angel-rey.png");
+  background-size: cover;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem .5rem 2rem;
+  width: 85%;
+  max-width: 18rem;
+  height: 25rem;
+  object-fit: cover;
+
+}
+
+.cardEze {
+  background-color: aqua;
+  background-image: url("./photo/fotoEze.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem .5rem 2rem;
+  width: 85%;
+  max-width: 18rem;
+  height: 25rem;
+  object-fit: cover;
+
+}
+
+.cardEsteban {
+  background-color: aqua;
+  background-image: url("./photo/fotoEsteban.jpeg");
+  background-size: cover;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem .5rem 2rem;
+  width: 85%;
+  max-width: 18rem;
+  height: 25rem;
+  object-fit: cover;
+
+}
+
+.cardFer {
+  background-image: url("./photo/fotoFer.jpeg");
+  background-size: cover;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 5px black;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem .5rem 2rem;
+  width: 85%;
+  max-width: 18rem;
+  height: 25rem;
+  object-fit: cover;
+
+}
+
+.nameBox {
+  width: 100%;
+  // background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h4 {
+    border-bottom: solid 2px $main-color;
+    text-shadow: 1px 1px 5px black;
+    border-radius: 4px;
+    // color    : $main-color;
+    color: white;
+    opacity: 0.9;
+    font-size: 1.8rem;
+  }
+}
+
+.linkBox {
+  // background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    font-size: 1.8rem;
+    // color    : $main-color;
+    color: white;
+    filter: drop-shadow(1px 1px 3px black);
+    // margin      : 0 1rem;
+    padding: 0.5rem;
+    transition: 0.1s;
+  }
+
+  a:hover {
+    color: $main-color;
+  }
+
+  a:active {
+    color: $main-color;
+    filter: brightness(0.8);
+  }
+}
+
+@media screen and (min-width: $notebook-width) {
+  .AboutUs {
+    width: 95%;
+  }
+
+  .cardFer,
+  .cardGonza,
+  .cardAngel,
+  .cardEze,
+  .cardBautista,
+  .cardDavid,
+  .cardEsteban {
+    cursor: pointer;
+    filter: brightness(0.4);
+    transition: 0.2s;
+    max-width: 21rem;
+    height: 29rem;
+
+    h4 {
+      display: none;
+      font-size: 1.3rem;
+    }
+
+    a {
+      display: none;
+      font-size: 1.8rem;
+    }
+  }
+
+  .cardFer:hover,
+  .cardGonza:hover,
+  .cardAngel:hover,
+  .cardEze:hover,
+  .cardBautista:hover,
+  .cardDavid:hover,
+  .cardEsteban:hover {
+    filter: brightness(1);
+
+    h4 {
+      display: inherit;
+    }
+
+    a {
+      display: inherit;
+    }
+  }
+}

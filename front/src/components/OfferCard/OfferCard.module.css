@@ -1,0 +1,168 @@
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.offers h1 {
+  border-bottom: #3884FE solid 2px;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  width: auto;
+  margin: 2.5rem auto;
+}
+.offersCard {
+  border: #eee solid 2px;
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 10px rgba(148, 148, 148, 0.5);
+  font-size: 2.4rem;
+  padding: 2rem 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.offersCardMainInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.offersCardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.offersCardInfo svg {
+  color: #828282;
+  font-size: 1.6rem;
+}
+.offersCardInfo p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.offersCardType {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.offersCardType p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.offersCardType svg {
+  font-size: 2rem;
+}
+.offersCardButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.offersCardButtons button {
+  background-color: transparent;
+  border: #3884FE solid 2px;
+  border-radius: 7px;
+  font-weight: 700;
+  padding: 0.8rem 2.5rem;
+  cursor: pointer;
+}
+.offersCardButtons button:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3884FE;
+}
+.offersCardButtons button:first-child svg {
+  font-size: 1.2rem;
+}
+.offersCardButtons button:last-child {
+  color: #ffffff;
+  background-color: #3884FE;
+}
+
+.offersCardDetail {
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+.offersCardDetail h3 {
+  font-size: 1.7rem;
+  border-bottom: #3884FE solid 2px;
+  padding-bottom: 3px;
+}
+.offersCardDetail h4 {
+  font-size: 1.3rem;
+  margin: 1.5rem auto 0;
+  border-bottom: 2px solid #b1b1b1;
+  padding-bottom: 3px;
+  width: 100%;
+  text-align: left;
+}
+
+.offersCardTransfers {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.offersCardTransfers div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: start;
+  min-width: 4rem;
+}
+.offersCardTransfers p {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1rem;
+}
+.offersCardTransfers svg {
+  color: #b1b1b1;
+  font-size: 1.2rem;
+}
+.offersCardTransfers span {
+  font-weight: 700;
+}
+.offersCardTransfers .sp {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 750px) {
+  .offersCard {
+    padding: 2rem 1.5rem;
+  }
+  .offersCardMainInfo {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .offersCardTransfers {
+    flex-direction: column;
+    border-bottom: #eee 2px solid;
+    padding: 1rem 0;
+    gap: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=OfferCard.module.css.map */

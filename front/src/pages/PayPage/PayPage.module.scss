@@ -1,0 +1,14 @@
+.payPage {
+  &Container {
+    // min-height: auto;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/planes/plane-8.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
